@@ -1,28 +1,29 @@
 # Enigma
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/enigma`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Enigma is a ruby library, Enigma helps you to interact with BlockCypher APIs
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'enigma'
+gem 'enigma', github: 'llopez/enigma'
 ```
 
 And then execute:
 
     $ bundle
 
-Or install it yourself as:
-
-    $ gem install enigma
-
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+Enigma.configure do |config|
+  config.api_key = "YOUR-API-KEY"
+end
+
+client = Enigma::AssetAPI.client
+client.generate_address
+```
 
 ## Development
 
@@ -32,10 +33,9 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/enigma.
+Bug reports and pull requests are welcome on GitHub at https://github.com/llopez/enigma.
 
 
 ## License
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-

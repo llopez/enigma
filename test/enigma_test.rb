@@ -5,7 +5,10 @@ class EnigmaTest < Minitest::Test
     refute_nil ::Enigma::VERSION
   end
 
-  def test_it_does_something_useful
-    assert false
+  def test_configure
+    Enigma.configure do |config|
+      config.api_key = "APIKEY"
+    end
+    assert_equal "APIKEY", Enigma.config.api_key
   end
 end
