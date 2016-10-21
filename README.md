@@ -1,5 +1,5 @@
 # Enigma
-<img src="https://raw.githubusercontent.com/llopez/Blog/gh-pages/img/enigma.png" height="150" align="right"/>
+<img src="https://raw.githubusercontent.com/llopez/Blog/gh-pages/img/enigma.png" align="right"/>
 
 [![Build Status](https://travis-ci.org/llopez/enigma.svg?branch=master)](https://travis-ci.org/llopez/enigma)
 
