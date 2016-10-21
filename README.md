@@ -1,4 +1,7 @@
 # Enigma
+<img src="https://raw.githubusercontent.com/llopez/Blog/gh-pages/img/enigma.png" height="150" align="right"/>
+
+[![Build Status](https://travis-ci.org/llopez/enigma.svg?branch=master)](https://travis-ci.org/llopez/enigma)
 
 Enigma is a ruby library, Enigma helps you to interact with BlockCypher APIs
 
@@ -19,10 +22,12 @@ And then execute:
 ```ruby
 Enigma.configure do |config|
   config.api_key = "YOUR-API-KEY"
+  config.version = "v1"
+  config.currency = "bcy"
+  config.network = "main"
 end
 
-client = Enigma::AssetAPI.client
-client.generate_address
+Enigma::AssetAPI.generate_address
 ```
 
 ## Development
